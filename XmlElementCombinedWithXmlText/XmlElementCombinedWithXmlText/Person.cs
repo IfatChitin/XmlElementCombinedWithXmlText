@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace XmlElementTextAndNewLines
+namespace XmlElementCombinedWithXmlText
 {
-    [Serializable]
     [XmlType(AnonymousType = true)]
+    [XmlRoot("person")]
     public class Person
     {
         [XmlAttribute("name")]
